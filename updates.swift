@@ -5,87 +5,56 @@
 //  Created by administrator on 4/21/21.
 //
 
-//
-//  ContentView.swift
-//  updatesVIEW
-//
-//  Created by M Perez on 4/26/21.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct updates: View {
     var body: some View {
-       
-            VStack {
-                
+        VStack {
                 HStack {
-                    Circle()
-                        .foregroundColor(.red)
-                        .frame(height: 20)
-                        .frame(width: 20, height: 20)
-        Text("Update  4/21/21")
-            .padding()
-            .foregroundColor (.black)
-                }
-                
-                .padding(.horizontal, 100)
-                .padding(.vertical,30)
-                .border(Color.gray)
-                .background(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/))
-                .foregroundColor(.gray)
+        
+                    Spacer ()
+                    Image ("chicagoStar")
+                        .resizable ()
+                        .scaledToFit()
+                        .frame (width:50, height: 50)
+                    VStack {
+                        Spacer()
+                            .padding()
+                        HStack{
+                            Text("Johnson & Johnson Vaccine Resumed 4/21/21")
+                                .font(.headline)
                     
-                
-                
-                HStack {
-                Circle()
-                    .foregroundColor(.red)
-                    .frame(height: 20)
-                    .frame(width: 20, height: 20)
-        Text ("Update   4/23/21")
-            .padding ()
-            .foregroundColor(.black)
-                }  .padding(.horizontal, 100)
-                .padding(.vertical,30)
-                .border(Color.gray)
-                .background(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/))
-                .foregroundColor(.gray)
-                
-                HStack {
-                Circle()
-                    .foregroundColor(.red)
-                    .frame(height: 20)
-                    .frame(width: 20, height: 20)
-        Text ("Update   4/25/21")
-                .padding ()
-            .foregroundColor(.black)
+                            Spacer()
+                        } .padding()
+
+        HStack {
+
+            Spacer ()
+            Image ("chicagoStar")
+                .resizable ()
+                .scaledToFit()
+                .frame (width:50, height: 50)
+            VStack {
+                Spacer()
+                    .padding()
+                HStack{
+                    Text("Walk up Vaccinations 4/23/21")
+                        .font(.headline)
+            
+                    Spacer()
                 }
-                .padding(.horizontal, 100)
-                .padding(.vertical,30)
-                .border(Color.gray)
-                .background(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/))
-                .foregroundColor(.gray)
-                
-                HStack {
-                Circle()
-                    .foregroundColor(.red)
-                    .frame(height: 20)
-                    .frame(width: 20, height: 20)
-        Text ("Update   4/27/21")
-            .padding ()
-            .foregroundColor(.black)
-                } .padding(.horizontal, 100)
-                .padding(.vertical,30)
-                .border(Color.gray)
-                .background(RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Corner Radius@*/10.0/*@END_MENU_TOKEN@*/))
-                .foregroundColor(.gray)
-            }
-    }
+        
+        } .padding()
+
+}
+        }
 }
 
-
-struct ContentView_Previews: PreviewProvider {
+struct updates_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        updates()
     }
 }
+}
+
+    }
